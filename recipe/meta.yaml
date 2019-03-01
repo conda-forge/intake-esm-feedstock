@@ -12,8 +12,8 @@ source:
 
 build: 
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  number: 0
-  skip: True  # [win or py2k]
+  number: 1
+  noarch: python
 
 requirements:
 
@@ -52,6 +52,8 @@ about:
 extra:
   recipe-maintainers:
     - andersy005
+    - matt-long
+
 
  
   
