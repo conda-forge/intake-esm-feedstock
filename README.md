@@ -19,9 +19,8 @@ Summary: Intake-esm provides a plugin for building and loading intake catalogs f
 Current build status
 ====================
 
-![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
-![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/intake-esm-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/intake-esm-feedstock)
 
 Current release info
 ====================
@@ -116,4 +115,5 @@ Feedstock Maintainers
 =====================
 
 * [@andersy005](https://github.com/andersy005/)
+* [@matt-long](https://github.com/matt-long/)
 
