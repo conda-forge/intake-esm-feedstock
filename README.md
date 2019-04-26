@@ -3,7 +3,7 @@ About intake-esm
 
 Home: https://github.com/NCAR/intake-esm
 
-Package license: Apache 2.0
+Package license: Apache
 
 Feedstock license: BSD 3-Clause
 
