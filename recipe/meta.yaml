@@ -11,7 +11,7 @@ source:
   
 
 build: 
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --single-version-externally-managed --record=record.txt -vv"
+  script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record=record.txt"
   number: 0
   noarch: python
 
