@@ -1,13 +1,9 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About intake-esm
 ================
 
 Home: https://github.com/NCAR/intake-esm
 
-Package license: Apache 2.0
+Package license: Apache
 
 Feedstock license: BSD 3-Clause
 
@@ -19,8 +15,17 @@ Summary: Intake-esm provides a plugin for building and loading intake catalogs f
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/intake-esm-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/intake-esm-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6292&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/intake-esm-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -115,5 +120,7 @@ Feedstock Maintainers
 =====================
 
 * [@andersy005](https://github.com/andersy005/)
+* [@jukent](https://github.com/jukent/)
+* [@kmpaul](https://github.com/kmpaul/)
 * [@matt-long](https://github.com/matt-long/)
 
