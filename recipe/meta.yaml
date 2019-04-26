@@ -1,5 +1,5 @@
 {% set name = "intake-esm" %}
-{% set version = "2019.2.28" %}
+{% set version = "2019.4.26" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 215369603e6264b2624aef81459896be0b0f2340c47aff10efa4c0397561a078
+  sha256: ced11b72ece08e3f1d219f6cc1bc15a6c4e1fb6157897387c6ed8ff9fd44d923
   
 
 build: 
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
@@ -53,6 +53,8 @@ extra:
   recipe-maintainers:
     - andersy005
     - matt-long
+    - jukent
+    - kmpaul
 
 
  
