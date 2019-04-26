@@ -11,7 +11,7 @@ source:
   
 
 build: 
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv --no-use-pep517"
   number: 0
   noarch: python
 
