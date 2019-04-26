@@ -11,7 +11,7 @@ source:
   
 
 build: 
-  script: "{{ PYTHON }} -m pip install --no-use-pep517 . --no-deps --ignore-installed -vv"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
   number: 0
   noarch: python
 
@@ -20,6 +20,9 @@ requirements:
   host:
     - python >3.5
     - pip
+    - setuptools
+    - setuptools-scm
+    - setuptools-scm-git-archive
 
   run:
     - python >3.5
