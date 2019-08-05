@@ -3,7 +3,7 @@ About intake-esm
 
 Home: https://github.com/NCAR/intake-esm
 
-Package license: Apache
+Package license: Apache 2.0
 
 Feedstock license: BSD 3-Clause
 
@@ -16,9 +16,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
       <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6292&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/intake-esm-feedstock?branchName=master">
