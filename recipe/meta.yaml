@@ -27,6 +27,7 @@ requirements:
     - tqdm
     - s3fs
     - docrep
+    - cached-property
 
 test:
   imports:
