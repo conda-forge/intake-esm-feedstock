@@ -1,5 +1,5 @@
 {% set name = "intake-esm" %}
-{% set version = "2019.8.5" %}
+{% set version = "2019.8.23" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2a7ca5b981959c26ef73de9092fc54bf01bae58020b9298d24df4c0e2850da26
+  sha256: 0c3866accec23b11a8ae94b8b6b09d66f0cdd151818950e6b49e6aabc39418b9
 
 build: 
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -27,6 +27,7 @@ requirements:
     - tqdm
     - s3fs
     - docrep
+    - cached-property
 
 test:
   imports:
