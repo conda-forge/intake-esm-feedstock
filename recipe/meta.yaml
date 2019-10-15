@@ -23,7 +23,7 @@ requirements:
   
   run:
     - python >3.5
-    - intake-xarray>=0.3.1
+    - intake-xarray >=0.3.1
     - fsspec
     - s3fs
     - gcsfs
