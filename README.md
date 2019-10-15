@@ -7,7 +7,8 @@ Package license: Apache 2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Intake-esm provides a plugin for building and loading intake catalogs for earth system data sets holdings, such as CMIP and CESM Large Ensemble datasets.
+Summary: An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and
+loading assets (netCDF files and/or Zarr stores) into xarray data sets.
 
 
 
