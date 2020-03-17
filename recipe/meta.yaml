@@ -1,5 +1,5 @@
 {% set name = "intake-esm" %}
-{% set version = "2019.12.13" %}
+{% set version = "2020.3.16" %}
 
 package:
   name: {{ name }}
@@ -7,39 +7,40 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8b4684e2ffcf8705e4cf2305dfe9453a19006838120583be97cb57824149544e
+  sha256: 0a5a051d1011f2c4f8f028f021e493b6f13920cce000d04cab31803a6734f485
 
-build: 
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+build:
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   number: 0
   noarch: python
 
 requirements:
 
   host:
-    - python >3.5
+    - python >=3.6
     - pip
     - setuptools_scm
-  
+
   run:
-    - python >3.5
-    - intake-xarray >=0.3.1
+    - python >=3.6
+    - dask
     - fsspec
-    - s3fs
-    - gcsfs
-
-
+    - intake >=0.5.2
+    - requests
+    - xarray >=0.13
+    
+   
 test:
   imports:
     - intake_esm
 
 about:
-  
   home: https://github.com/NCAR/intake-esm
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: |
+  summary: An intake plugin for earth system model data sets holdings
+  description: |
     An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and 
     loading assets (netCDF files and/or Zarr stores) into xarray data sets.
   dev_url: https://github.com/NCAR/intake-esm
