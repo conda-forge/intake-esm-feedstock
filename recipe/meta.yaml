@@ -23,22 +23,24 @@ requirements:
 
   run:
     - python >3.5
-    - intake-xarray >=0.3.1
+    - dask
     - fsspec
-    - s3fs
-    - gcsfs
-
-
+    - intake >=0.5.2
+    - requests
+    - xarray >=0.13
+    
+   
 test:
   imports:
     - intake_esm
 
 about:
   home: https://github.com/NCAR/intake-esm
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: |
+  summary: An intake plugin for earth system model data sets holdings
+  description: |
     An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and 
     loading assets (netCDF files and/or Zarr stores) into xarray data sets.
   dev_url: https://github.com/NCAR/intake-esm
