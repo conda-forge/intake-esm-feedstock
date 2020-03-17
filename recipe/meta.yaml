@@ -17,12 +17,12 @@ build:
 requirements:
 
   host:
-    - python >3.5
+    - python >=3.6
     - pip
     - setuptools_scm
 
   run:
-    - python >3.5
+    - python >=3.6
     - dask
     - fsspec
     - intake >=0.5.2
