@@ -1,5 +1,5 @@
 {% set name = "intake-esm" %}
-{% set version = "2020.3.16" %}
+{% set version = "2020.3.16.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0a5a051d1011f2c4f8f028f021e493b6f13920cce000d04cab31803a6734f485
+  sha256: 772c4f63482bada32a6d69a47d05448f000146e90c22f01d640758a907da8c75
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -28,8 +28,8 @@ requirements:
     - intake >=0.5.2
     - requests
     - xarray >=0.13
-    
-   
+
+
 test:
   imports:
     - intake_esm
