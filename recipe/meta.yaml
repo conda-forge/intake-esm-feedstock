@@ -27,7 +27,8 @@ requirements:
     - fsspec
     - intake >=0.5.2
     - requests
-    - xarray >=0.13
+    - xarray >=0.15
+    - tqdm
 
 
 test:
