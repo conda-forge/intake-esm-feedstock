@@ -28,7 +28,7 @@ requirements:
     - intake >=0.5.2
     - requests
     - xarray >=0.15
-    - tqdm
+    - fastprogress >=0.2.3
 
 
 test:
