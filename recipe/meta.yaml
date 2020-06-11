@@ -25,9 +25,9 @@ requirements:
     - python >=3.6
     - dask
     - fsspec
-    - intake >=0.5.2
+    - intake >=0.6.0
     - requests
-    - xarray >=0.15
+    - xarray >=0.15.1
     - fastprogress >=0.2.3
 
 
