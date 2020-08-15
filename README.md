@@ -1,7 +1,7 @@
 About intake-esm
 ================
 
-Home: https://github.com/NCAR/intake-esm
+Home: https://github.com/intake/intake-esm
 
 Package license: Apache-2.0
 
@@ -9,7 +9,7 @@ Feedstock license: BSD-3-Clause
 
 Summary: An intake plugin for earth system model data sets holdings
 
-An intake plugin for parsing an ESM (Earth System Model) Collection/catalog and
+An intake plugin for parsing an Earth System Model (ESM) collection/catalog and
 loading assets (netCDF files and/or Zarr stores) into xarray data sets.
 
 
