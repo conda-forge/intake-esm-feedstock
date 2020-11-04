@@ -5,9 +5,13 @@ Home: https://github.com/intake/intake-esm
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/intake-esm-feedstock/blob/master/LICENSE.txt)
 
-Summary: An intake plugin for earth system model data sets holdings
+Summary: An intake plugin for Earth System Model (ESM) data sets holdings.
+
+Development: https://github.com/intake/intake-esm
+
+Documentation: https://intake-esm.readthedocs.io/en/latest/
 
 An intake plugin for parsing an Earth System Model (ESM) collection/catalog and
 loading assets (netCDF files and/or Zarr stores) into xarray data sets.
