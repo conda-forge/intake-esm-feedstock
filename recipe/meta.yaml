@@ -1,5 +1,5 @@
 {% set name = "intake-esm" %}
-{% set version = "2020.11.4" %}
+{% set version = "2020.12.18" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7c4724cb9b33e152e861366d121dee49bc05a8231d2671a50ec4f4917d9bc27a
+  sha256: f3d3ad948ae361443d53f13a6533e5970137ff9c56d74faa0fd3c7c110b89af0
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
