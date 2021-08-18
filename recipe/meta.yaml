@@ -1,5 +1,5 @@
 {% set name = "intake-esm" %}
-{% set version = "2021.1.15" %}
+{% set version = "2021.8.17" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6cd1aaecc1df68f0a7b94ab405db347b9592354a7b29b037dc8935f74ee09a1b
+  sha256: d93281c72de4f7ef10a2587aa68538bd5aaefd171d4490e319437ad0d03c208b
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
@@ -29,6 +29,7 @@ requirements:
     - h5netcdf >=0.8.1
     - intake >=0.6.0
     - netcdf4 >=1.5.5
+    - pandas >=1.0.0
     - requests >=2.24.0
     - xarray >=0.16.2
     - zarr >=2.5
@@ -57,3 +58,4 @@ extra:
     - jukent
     - kmpaul
     - sherimickelson
+    - mgrover1
