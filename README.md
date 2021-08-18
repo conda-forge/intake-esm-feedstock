@@ -127,5 +127,6 @@ Feedstock Maintainers
 * [@jukent](https://github.com/jukent/)
 * [@kmpaul](https://github.com/kmpaul/)
 * [@matt-long](https://github.com/matt-long/)
+* [@mgrover1](https://github.com/mgrover1/)
 * [@sherimickelson](https://github.com/sherimickelson/)
 
