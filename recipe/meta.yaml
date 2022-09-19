@@ -17,27 +17,30 @@ build:
 requirements:
 
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools_scm
 
   run:
-    - python >=3.7
-    - dask
-    - fastprogress >=0.2.6
-    - fsspec >=0.8.0
-    - h5netcdf >=0.8.1
-    - intake >=0.6.0
+    - python >=3.8
+    - dask >=2022.02.0
+    - fastprogress >=1.0.0
+    - fsspec >=2022.7.0
+    - intake >=0.6.6
     - netcdf4 >=1.5.5
-    - pandas >=1.0.0
     - requests >=2.24.0
-    - xarray >=0.16.2
-    - zarr >=2.5
+    - xarray >=2022.06
+    - zarr >=2.12
+    - pydantic >=1.9
 
 
 test:
   imports:
     - intake_esm
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/intake/intake-esm
