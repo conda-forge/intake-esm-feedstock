@@ -1,11 +1,11 @@
-About intake-esm
-================
+About intake-esm-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/intake-esm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/intake/intake-esm
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/intake-esm-feedstock/blob/main/LICENSE.txt)
 
 Summary: An intake plugin for Earth System Model (ESM) data sets holdings.
 
