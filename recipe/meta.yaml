@@ -31,7 +31,7 @@ requirements:
     - requests >=2.24.0
     - xarray >=2022.06
     - zarr >=2.12
-    - pydantic >=1.9
+    - pydantic >=2.0
 
 
 test:
