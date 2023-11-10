@@ -1,5 +1,5 @@
 {% set name = "intake-esm" %}
-{% set version = "2023.10.27" %}
+{% set version = "2023.11.10" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 880fd906ef5aaa0d80f31c9b5f0bb17a2a0a9f32d94b8736744350367702c050
+  sha256: 3b8f1b2368eebfaf00121886dfc8e59410dd2151c3bee205d09d2bec3df413a4
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
@@ -32,6 +32,7 @@ requirements:
     - xarray >=2022.06
     - zarr >=2.12
     - pydantic >=2.0
+    - pandas >=2.1.0
 
 
 test:
