@@ -11,19 +11,19 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
 
   host:
-    - python >=3.9
+    - python >=3.10
     - pip
     - setuptools_scm
 
   run:
     - dask-core >=2022.02.0
-    - python >=3.9
+    - python >=3.10
     - dask >=2022.02.0
     - fastprogress >=1.0.0
     - fsspec >=2022.11.0
