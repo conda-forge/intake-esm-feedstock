@@ -1,5 +1,5 @@
 {% set name = "intake-esm" %}
-{% set version = "2023.11.10" %}
+{% set version = "2024.2.6" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3b8f1b2368eebfaf00121886dfc8e59410dd2151c3bee205d09d2bec3df413a4
+  sha256: b2c472418cfeafb11b0a6b1ecfb6e0f36a7ece3360d960b9e8008023493a3b7d
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
@@ -22,11 +22,12 @@ requirements:
     - setuptools_scm
 
   run:
+    - dask-core >=2022.02.0
     - python >=3.9
     - dask >=2022.02.0
     - fastprogress >=1.0.0
     - fsspec >=2022.11.0
-    - intake >=0.6.6
+    - intake >=0.6.6,<2
     - netcdf4 >=1.5.5
     - requests >=2.24.0
     - xarray >=2022.06
