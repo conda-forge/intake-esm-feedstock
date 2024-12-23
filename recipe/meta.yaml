@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "intake-esm" %}
 {% set version = "2024.2.6" %}
 
@@ -6,24 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b2c472418cfeafb11b0a6b1ecfb6e0f36a7ece3360d960b9e8008023493a3b7d
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  number: 1
+  number: 2
   noarch: python
 
 requirements:
 
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools_scm
 
   run:
     - dask-core >=2022.02.0
-    - python >=3.10
+    - python >={{ python_min }}
     - dask >=2022.02.0
     - fastprogress >=1.0.0
     - fsspec >=2022.11.0
@@ -43,6 +44,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/intake/intake-esm
