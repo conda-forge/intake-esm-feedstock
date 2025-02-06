@@ -1,18 +1,18 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "intake-esm" %}
-{% set version = "2024.2.6" %}
+{% set version = "2025.2.3" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b2c472418cfeafb11b0a6b1ecfb6e0f36a7ece3360d960b9e8008023493a3b7d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 70c4b6fa999684ae1d3a5c1ff134a9cd0a44c47f62e46c7c35518f18678762fd
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  number: 2
+  number: 0
   noarch: python
 
 requirements:
@@ -23,16 +23,16 @@ requirements:
     - setuptools_scm
 
   run:
-    - dask-core >=2022.02.0
+    - dask-core >=2024.12
     - python >={{ python_min }}
-    - dask >=2022.02.0
+    - dask >=2024.12
     - fastprogress >=1.0.0
-    - fsspec >=2022.11.0
-    - intake >=0.6.6,<2
+    - fsspec >=2024.12
+    - intake >=2.0.0
     - netcdf4 >=1.5.5
     - requests >=2.24.0
-    - xarray >=2022.06
-    - zarr >=2.12
+    - xarray >=2024.10
+    - zarr >=2.12,<3.0
     - pydantic >=2.0
     - pandas >=2.1.0
 
