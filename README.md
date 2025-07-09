@@ -152,6 +152,7 @@ Feedstock Maintainers
 =====================
 
 * [@andersy005](https://github.com/andersy005/)
+* [@charles-turner-1](https://github.com/charles-turner-1/)
 * [@jukent](https://github.com/jukent/)
 * [@kmpaul](https://github.com/kmpaul/)
 * [@matt-long](https://github.com/matt-long/)
