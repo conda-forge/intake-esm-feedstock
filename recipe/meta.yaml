@@ -12,7 +12,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -34,7 +34,9 @@ requirements:
     - xarray >=2024.10
     - zarr >=2.12,<3.0
     - pydantic >=2.0
+    - pydap !=3.5.5
     - pandas >=2.1.0
+    - polars >=1.2.4
 
 
 test:
@@ -66,3 +68,4 @@ extra:
     - kmpaul
     - sherimickelson
     - mgrover1
+    - charles-turner-1
