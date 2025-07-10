@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "intake-esm" %}
-{% set version = "2025.2.3" %}
+{% set version = "2025.7.9" %}
 
 package:
   name: {{ name }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 70c4b6fa999684ae1d3a5c1ff134a9cd0a44c47f62e46c7c35518f18678762fd
+  sha256: d82a61e13c11a01a6c50cfebc885bb4c41fc943d907b70a131cef32734458c8b
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
@@ -23,6 +23,7 @@ requirements:
     - setuptools_scm
 
   run:
+    - itables
     - dask-core >=2024.12
     - python >={{ python_min }}
     - dask >=2024.12
@@ -32,11 +33,11 @@ requirements:
     - netcdf4 >=1.5.5
     - requests >=2.24.0
     - xarray >=2024.10
-    - zarr >=2.12,<3.0
+    - zarr >=2.12
     - pydantic >=2.0
     - pydap !=3.5.5
     - pandas >=2.1.0
-    - polars >=1.2.4
+    - polars >=1.24.0
 
 
 test:
